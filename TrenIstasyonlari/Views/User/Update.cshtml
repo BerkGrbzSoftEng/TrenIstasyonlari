@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <!--begin::Container-->
+    <div id="kt_content_container" class="container-xxl">
+
+        <form class="form" asp-action="update">
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Kullanıcı Adı:</label>
+                    <input type="text"name="KullaniciAdi" class="form-control form-control-solid"  value="@User.Identity.Name"/>
+                </div>
+                <div class="form-group">
+                    <label>Şifre:</label>
+                    <input type="password" name="Sifre" class="form-control form-control-solid"   />
+                </div>
+
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+            </div>
+        </form>
+    </div>
+</div>
